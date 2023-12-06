@@ -1,0 +1,202 @@
+/* Styles de base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles de la Navbar */
+.navbar {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Styles de la section À Propos */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Styles de la section Services */
+.services {
+  padding: 50px 20px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-card {
+  flex: 1;
+  margin: 0 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Styles de la section Témoignages */
+.testimonial {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+}
+
+.testimonial-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.testimonial-item {
+  flex: 0 0 calc(50% - 20px);
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.testimonial-text {
+  font-style: italic;
+}
+
+.testimonial-author {
+  text-align: right;
+  margin-top: 10px;
+}
+
+/* Styles de la section Contact */
+.contact {
+  padding: 50px 20px;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Styles du Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    margin-top: 20px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .about {
+    padding: 30px 20px;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-image img {
+    margin-top: 30px;
+  }
+
+  .services-list {
+    flex-direction: column;
+  }
+
+  .service-card {
+    flex: 1 1 100%;
+  }
+
+  .testimonial-item {
+    flex: 0 0 100%;
+  }
+}
